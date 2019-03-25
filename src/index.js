@@ -7,7 +7,7 @@ import constants from './config/constant';
 import config from './config.json';
 import './config/database';
 import chalk from 'chalk';
-
+import ApiRoutes from './routes';
 let app = express();
 app.server = http.createServer(app);
 
@@ -18,10 +18,9 @@ app.use(cors({
 	exposedHeaders: config.corsHeaders
 }));
 
-app.use(bodyParser.json({
-	limit : config.bodyLimit
-}));
-
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/api', ApiRoutes);
 if (!module.parent) {
 	app.listen(constants.PORT, err => {
 	  if (err) {
