@@ -13,8 +13,8 @@ const routes = new Router();
 /**
  * CRUD
  */
-routes.get('/',  PostController.getList);
-routes.get('/:id',  PostController.getById);
+routes.get('/', authJwt, PostController.getList);
+routes.get('/:id', authJwt, PostController.getById);
 routes.post(
   '/',
   authJwt,
