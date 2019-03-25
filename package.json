@@ -32,12 +32,15 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.13.3",
+    "chalk": "^2.4.2",
     "compression": "^1.5.2",
     "cors": "^2.7.1",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
+    "mongoose": "^5.4.19",
     "morgan": "^1.8.0",
-    "resource-router-middleware": "^0.6.0"
+    "resource-router-middleware": "^0.6.0",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",

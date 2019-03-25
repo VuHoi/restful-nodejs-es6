@@ -1,5 +1,9 @@
 {
 	"port": 8080,
 	"bodyLimit": "100kb",
-	"corsHeaders": ["Link"]
+	"corsHeaders": ["Link"],
+	"MONGO_URL":"mongodb://127.0.0.1:27017/Hahaha",
+	"JWT_SECRET_DEV":"ThuTinh1234",
+	"RAVEN_ID":"ThuTinh1234",
+	"JWT_SECRET":"ThuTinh1234"
 }
