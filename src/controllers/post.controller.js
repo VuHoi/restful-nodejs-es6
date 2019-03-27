@@ -89,7 +89,6 @@ export const validation = {
  *    HTTP/1.1 401 Unauthorized
  */
 export async function getList(req, res, next) {
-  console.log(req.user);
   try {
     const promise = await Promise.all([
       User.findById(req.user._id),
